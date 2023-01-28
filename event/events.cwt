@@ -67,6 +67,7 @@ event = {
             ## cardinality = 0..1
             picture = <sprite>
         }
+        ## cardinality = 1..inf
         picture = <sprite>
         ## cardinality = 1..inf
         picture = {
@@ -202,7 +203,7 @@ event = {
 		## cardinality = 0..1
 		weight_multiplier = {
             enum[duration] = int
-            
+
             alias_name[multiplicative_modifier] = alias_match_left[multiplicative_modifier]
 		}
 	}
