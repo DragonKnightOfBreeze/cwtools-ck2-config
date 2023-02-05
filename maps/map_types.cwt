@@ -13,7 +13,7 @@ types = {
         type_per_file = yes
         path = "game/map"
         path_file = "colormap.txt"
-    } 
+    }
 
     ## type_key_filter = { mild_winter normal_winter severe_winter }
     type[climates] = {
@@ -100,7 +100,8 @@ terrains = {
 	is_water = yes
 	## cardinality = 0..1
 	inland_sea = yes
-	
+
+    ## color_type = rgb
 	## cardinality = 0..1
 	color = {
 		## cardinality = 3..3
