@@ -491,7 +491,7 @@ modifiers = {
     max_population_mult = character
     max_manpower_mult = character
     max_population = character
-    
+
     # Court modifiers
     court_size_modifier = character
     court_size_maintenance_cost_modifier = character
