@@ -14,7 +14,7 @@ types = {
 # I just want to know the name. So the validation is obviously incomplete
 sprite = {
 	name = scalar
-    ## file_extensions = { .dds .png }
+    ## file_extensions = { .dds .png .tga }
     texturefile = filepath
 	## cardinality = 0..1
 	noOfFrames = int
