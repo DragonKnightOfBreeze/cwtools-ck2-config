@@ -512,8 +512,8 @@ alias[effect:change_society_currency] = {
 ## scope = character
 ### Fires an event for the scoped character.
 alias[effect:character_event] = {
-    id = <event.character>
-    id = <event.long_character>
+    id = <event.character_event>
+    id = <event.long_character_event>
     id = <event.letter_event>
 
     ## cardinality = 0..1
@@ -532,8 +532,8 @@ alias[effect:character_event] = {
 ## scope = character
 ### Fires an event for the scoped character.
 alias[effect:long_character_event] = {
-    id = <event.character>
-    id = <event.long_character>
+    id = <event.character_event>
+    id = <event.long_character_event>
 
     ## cardinality = 0..1
     enum[duration_dy] = int
@@ -687,7 +687,7 @@ alias[effect:death] = {
 alias[effect:decadence] = int
 
 ## scope = character
-### Also see, approve_law.
+### Also see,ï¿½approve_law.
 alias[effect:decline_law] = TODO
 
 ## scope = character
@@ -844,7 +844,7 @@ alias[effect:leave_society] = yes
 ## scope = character
 ### Fires an event to scoped character.
 alias[effect:letter_event] = {
-    id = <event.letter>
+    id = <event.letter_event>
 
     ## cardinality = 0..1
     enum[duration_dy] = int
@@ -893,7 +893,7 @@ alias[effect:move_character] = scope[character]
 ## scope = character
 ### Fires an event to scoped character.
 alias[effect:narrative_event] = {
-    id = <event.narrative>
+    id = <event.narrative_event>
 
     ## cardinality = 0..1
     enum[duration_dy] = int
@@ -988,7 +988,7 @@ alias[effect:population] = int
 alias[effect:remove_character_modifier] = <event_modifier>
 
 ## scope = character
-### Removes a number of instances of a, character modifier, (usually a stackable one).
+### Removes a number of instances of a,ï¿½character modifier,ï¿½(usually a stackable one).
 alias[effect:remove_character_modifiers] = {
     modifier = <event_modifier>
     amount = int
@@ -1912,13 +1912,13 @@ alias[effect:abandon_heresy] = yes
 ## scope = character
 ### Removes specified event id with a delayed trigger on scoped character.
 alias[effect:clear_delayed_event] = {
-    id = <event.character>
+    id = <event.character_event>
 }
 
 ## scope = province
 ### Removes specified event id with a delayed trigger on scoped province.
 alias[effect:clear_delayed_event] = {
-    id = <event.province>
+    id = <event.province_event>
 }
 
 # TODO: confirm scopes, wiki's likely outdated here
@@ -2436,7 +2436,7 @@ alias[effect:destroy_in_extra_holding] = {
 ## scope = province
 ### Fires an event for the scoped province.
 alias[effect:province_event] = {
-    id = <event.province>
+    id = <event.province_event>
 
     ## cardinality = 0..1
     days = int

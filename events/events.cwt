@@ -1,58 +1,44 @@
 types = {
-	type[event] = {
-		name_field = "id"
+    type[event] = {
+        path = "game/events"
+        file_extension = .txt
+        name_field = id
 
-		path = "game/events"
-
-		## type_key_filter = character_event
-		## push_scope = character
-		subtype[character] = {
+        subtype[hidden] = {
+            hide_window = yes
+        }
+        subtype[triggered] = {
+            is_triggered_only = yes
+        }
+        subtype[mean_time_to_happen] = {
+            mean_time_to_happen = {}
         }
 
-		## type_key_filter = long_character_event
-		## push_scope = character
-		subtype[long_character] = {
-        }
-
-		## type_key_filter = letter_event
-		## push_scope = character
-		subtype[letter] = {
-        }
-
-		## type_key_filter = narrative_event
-		## push_scope = character
-		subtype[narrative] = {
-		}
-		## type_key_filter = province_event
-		## push_scope = province
-		subtype[province] = {
-        }
-
-		## type_key_filter = diploresponse_event
-		## push_scope = character
-		subtype[diploresponse] = {
-		}
-		## type_key_filter = unit_event
-		## push_scope = unit
-		subtype[unit] = {
-        }
-
-		## type_key_filter = society_quest_event
-		## push_scope = character
-		subtype[society_quest] = {
-        }
-
-		subtype[mean_time_to_happen] = {
-			mean_time_to_happen = {
-			}
-		}
-		subtype[hidden] = {
-			hide_window = yes
-		}
-		subtype[triggered] = {
-			is_triggered_only = yes
-		}
-	}
+        ## type_key_filter = character_event
+        ## push_scope = character
+        subtype[character_event] = {}
+        ## type_key_filter = long_character_event
+        ## push_scope = character
+        subtype[long_character_event] = {}
+        ## type_key_filter = letter_event
+        ## push_scope = character
+        subtype[letter_event] = {}
+        ## type_key_filter = narrative_event
+        ## push_scope = character
+        subtype[narrative_event] = {}
+        ## type_key_filter = province_event
+        ## push_scope = province
+        subtype[province_event] = {}
+        ## type_key_filter = diploresponse_event
+        ## push_scope = character
+        subtype[diploresponse_event] = {}
+        ## type_key_filter = unit_event
+        ## push_scope = unit
+        subtype[unit_event] = {}
+        ## type_key_filter = society_quest_event
+        ## push_scope = character
+        subtype[society_quest_event] = {}
+    }
 }
 
 event = {
@@ -130,27 +116,27 @@ event = {
     alias_name[pre_trigger] = alias_match_left[pre_trigger]
 
     ## cardinality = 0..1
-	trigger = single_alias_right[trigger_clause]
+    trigger = single_alias_right[trigger_clause]
 
-	## cardinality = 0..1
-	immediate = {
-		alias_name[effect] = alias_match_left[effect]
+    ## cardinality = 0..1
+    immediate = {
+        alias_name[effect] = alias_match_left[effect]
     }
 
-	## cardinality = 0..1
+    ## cardinality = 0..1
     fail_trigger_effect = {
         alias_name[effect] = alias_match_left[effect]
     }
 
     # TODO: Fix this to 1..inf and have a subtype where when hide_window = yes....
     ## cardinality = 0..inf
-	option = {
-		subtype[hidden] = {
-			## cardinality = 0..1
-			name = localisation
-		}
-		subtype[!hidden] = {
-			## severity = warning
+    option = {
+        subtype[hidden] = {
+            ## cardinality = 0..1
+            name = localisation
+        }
+        subtype[!hidden] = {
+            ## severity = warning
             name = localisation
             ## cardinality = 1..inf
             name = {
@@ -158,18 +144,18 @@ event = {
                 text = localisation
             }
 
-		}
+        }
 
-		## cardinality = 0..1
-		trigger = single_alias_right[trigger_clause]
+        ## cardinality = 0..1
+        trigger = single_alias_right[trigger_clause]
 
-		## cardinality = 0..1
-		alias_name[effect] = alias_match_left[effect]
+        ## cardinality = 0..1
+        alias_name[effect] = alias_match_left[effect]
 
-		## cardinality = 0..1
-		ai_chance = {
-			factor = float[0..10000]
-			alias_name[multiplicative_modifier] = alias_match_left[multiplicative_modifier]
+        ## cardinality = 0..1
+        ai_chance = {
+            factor = float[0..10000]
+            alias_name[multiplicative_modifier] = alias_match_left[multiplicative_modifier]
         }
 
         ## cardinality = 0..1
@@ -185,28 +171,28 @@ event = {
 
         ## cardinality = 0..1
         tooltip_info = bool
-	}
+    }
 
 
-	## cardinality = 0..1
-	after = {
-		alias_name[effect] = alias_match_left[effect]
+    ## cardinality = 0..1
+    after = {
+        alias_name[effect] = alias_match_left[effect]
     }
 
     subtype[!triggered] = {
-		mean_time_to_happen = {
-			enum[duration] = int
-			alias_name[multiplicative_modifier] = alias_match_left[multiplicative_modifier]
-		}
-	}
-	subtype[triggered] = {
-		## cardinality = 0..1
-		weight_multiplier = {
+        mean_time_to_happen = {
+            enum[duration] = int
+            alias_name[multiplicative_modifier] = alias_match_left[multiplicative_modifier]
+        }
+    }
+    subtype[triggered] = {
+        ## cardinality = 0..1
+        weight_multiplier = {
             enum[duration] = int
 
             alias_name[multiplicative_modifier] = alias_match_left[multiplicative_modifier]
-		}
-	}
+        }
+    }
 
 }
 
@@ -297,7 +283,7 @@ alias[pre_trigger:is_female] = bool
 # scope = character
 alias[pre_trigger:is_married] = bool
 
-### 	[?]
+###    [?]
 # scope = character
 alias[pre_trigger:is_sick] = bool
 

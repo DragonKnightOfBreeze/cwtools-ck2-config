@@ -18,7 +18,7 @@ on_action = {
         int = 0
         ## cardinality = 0..inf
         ### Left hand is weight, multiplied by the event's weight_multiplier. Right hand is event.
-        int = <event.character>
+        int = <event.character_event>
         ### Each block is evaluated separately and has one (or none if the 0 entry is chosen) event happen.
         scalar = {
             ## cardinality = 0..1
