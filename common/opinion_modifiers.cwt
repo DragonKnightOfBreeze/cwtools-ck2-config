@@ -55,7 +55,7 @@ opinion_modifier = {
     divorce_reason = bool
 
     ## cardinality = 0..1
-    ### If yes, supresses all non-agression pacts between the characters while held. Defaults to "no".
+    ### If yes, suppresses all non-agression pacts between the characters while held. Defaults to "no".
     disable_non_aggression_pacts = bool
 
     ## cardinality = 0..1
