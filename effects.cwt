@@ -50,11 +50,9 @@ alias[effect:log_scopes] = yes
 ### An effect that might execute or not based on random chance.
 alias[effect:random] = {
     ### Basic chance is equal to [value]%.
-    chance = int
-
+    chance = int[1...99]
     ## cardinality = 0..inf
     alias_name[multiplicative_modifier] = alias_match_left[multiplicative_modifier]
-
     ## cardinality = 1..inf
     alias_name[effect] = alias_match_left[effect]
 }
