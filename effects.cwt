@@ -510,9 +510,9 @@ alias[effect:change_society_currency] = {
 ## scope = character
 ### Fires an event for the scoped character.
 alias[effect:character_event] = {
-    id = <event.character_event>
-    id = <event.long_character_event>
-    id = <event.letter_event>
+    id = <event.character>
+    id = <event.long_character>
+    id = <event.letter>
 
     ## cardinality = 0..1
     enum[duration_dy] = int
@@ -530,8 +530,8 @@ alias[effect:character_event] = {
 ## scope = character
 ### Fires an event for the scoped character.
 alias[effect:long_character_event] = {
-    id = <event.character_event>
-    id = <event.long_character_event>
+    id = <event.character>
+    id = <event.long_character>
 
     ## cardinality = 0..1
     enum[duration_dy] = int
@@ -842,7 +842,7 @@ alias[effect:leave_society] = yes
 ## scope = character
 ### Fires an event to scoped character.
 alias[effect:letter_event] = {
-    id = <event.letter_event>
+    id = <event.letter>
 
     ## cardinality = 0..1
     enum[duration_dy] = int
@@ -891,7 +891,7 @@ alias[effect:move_character] = scope[character]
 ## scope = character
 ### Fires an event to scoped character.
 alias[effect:narrative_event] = {
-    id = <event.narrative_event>
+    id = <event.narrative>
 
     ## cardinality = 0..1
     enum[duration_dy] = int
@@ -1910,13 +1910,13 @@ alias[effect:abandon_heresy] = yes
 ## scope = character
 ### Removes specified event id with a delayed trigger on scoped character.
 alias[effect:clear_delayed_event] = {
-    id = <event.character_event>
+    id = <event.character>
 }
 
 ## scope = province
 ### Removes specified event id with a delayed trigger on scoped province.
 alias[effect:clear_delayed_event] = {
-    id = <event.province_event>
+    id = <event.province>
 }
 
 # TODO: confirm scopes, wiki's likely outdated here
@@ -2434,7 +2434,7 @@ alias[effect:destroy_in_extra_holding] = {
 ## scope = province
 ### Fires an event for the scoped province.
 alias[effect:province_event] = {
-    id = <event.province_event>
+    id = <event.province>
 
     ## cardinality = 0..1
     days = int

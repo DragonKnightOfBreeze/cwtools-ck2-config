@@ -14,30 +14,38 @@ types = {
             mean_time_to_happen = {}
         }
 
+        ## group = event_type
         ## type_key_filter = character_event
         ## push_scope = character
-        subtype[character_event] = {}
+        subtype[character] = {}
+        ## group = event_type
         ## type_key_filter = long_character_event
         ## push_scope = character
-        subtype[long_character_event] = {}
+        subtype[long_character] = {}
+        ## group = event_type
         ## type_key_filter = letter_event
         ## push_scope = character
-        subtype[letter_event] = {}
+        subtype[letter] = {}
+        ## group = event_type
         ## type_key_filter = narrative_event
         ## push_scope = character
-        subtype[narrative_event] = {}
+        subtype[narrative] = {}
+        ## group = event_type
         ## type_key_filter = province_event
         ## push_scope = province
-        subtype[province_event] = {}
+        subtype[province] = {}
+        ## group = event_type
         ## type_key_filter = diploresponse_event
         ## push_scope = character
-        subtype[diploresponse_event] = {}
+        subtype[diploresponse] = {}
+        ## group = event_type
         ## type_key_filter = unit_event
         ## push_scope = unit
-        subtype[unit_event] = {}
+        subtype[unit] = {}
+        ## group = event_type
         ## type_key_filter = society_quest_event
         ## push_scope = character
-        subtype[society_quest_event] = {}
+        subtype[society_quest] = {}
     }
 }
 
