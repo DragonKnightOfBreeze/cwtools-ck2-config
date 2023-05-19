@@ -117,26 +117,19 @@ alias[effect:sound_effect] = <sound>
 ### Forces an outbreak, but follows the scenarios set up in the disease.txt file.
 alias[effect:start_outbreak] = <disease>
 
-# TODO: implement validation
-## scope = any
 ### Based on the evaluation of a simple (non-clause right-hand side) trigger, selects up to one of the results to happen.
+## scope = any
 alias[effect:trigger_switch] = {
     ### The LHS trigger to check.
-    on_trigger = TODO
-
-    ## cardinality = 1..inf
+    on_trigger = alias_keys_field[trigger]
     ### The RHS option.
-    scalar = {
-        ## cardinality = 1..inf
-        alias_name[effect] = alias_match_left[effect]
-    }
-
-    ## cardinality = 0..1
+    ## cardinality = ~1..inf
+    # for key of this property, config will be overridden by:
+    # icu.windea.pls.lang.config.impl.ParadoxSwitchCaseOverriddenConfigProvider
+    scalar = { alias_name[effect] = alias_match_left[effect] }
     ### The option to pick if none of the previous options match.
-    fallback = {
-        ## cardinality = 1..inf
-        alias_name[effect] = alias_match_left[effect]
-    }
+    ## cardinality = ~1..1
+    fallback = { alias_name[effect] = alias_match_left[effect] }
 }
 
 ## scope = any
