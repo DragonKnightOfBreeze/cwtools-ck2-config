@@ -33,13 +33,14 @@ alias[trigger:hidden_trigger] = single_alias_right[trigger_clause]
 
 ## scope = any
 alias[effect:if] = {
+    ## cardinality = ~1..1
 	limit = single_alias_right[trigger_clause]
 	alias_name[effect] = alias_match_left[effect]
 }
 
 ## scope = any
 alias[effect:else_if] = {
-	## severity = info
+    ## cardinality = ~1..1
 	limit = single_alias_right[trigger_clause]
 	alias_name[effect] = alias_match_left[effect]
 }
