@@ -8,6 +8,10 @@ types = {
             name = "$"
             desc = "$_desc"
         }
+        images = {
+            ## primary
+            picture = picture # <sprite>
+        }
     }
 }
 

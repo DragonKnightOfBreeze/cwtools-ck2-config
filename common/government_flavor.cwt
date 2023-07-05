@@ -2,11 +2,13 @@ types = {
     type[government_flavor] = {
         path_strict = yes
         path = "game/common/government_flavor"
-
         name_field = name
-
         localisation = {
             name = name
+        }
+        images = {
+            ## primary
+            graphics = graphics # <sprite>
         }
     }
 }

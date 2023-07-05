@@ -545,7 +545,7 @@ alias[effect:chronicle] = {
     entry = localisation
 
     ## cardinality = 0..1
-    portrait = TODO # localisation as scalar?
+    portrait = localisation # localisation as scalar?
 
     ## cardinality = 0..1
     picture = <sprite>

@@ -3,6 +3,10 @@ types = {
         path_strict = yes
         path_file = "sound.sfx"
 		path = "game/interface"
+        images = {
+            ## primary
+            file = picture # filepath[sound/]
+        }
     }
 }
 

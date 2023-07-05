@@ -24,6 +24,11 @@ types = {
             ## optional
             log = "$_LOG"
         }
+        images = {
+            ## primary
+            ## optional
+            picture = picture # <sprite>
+        }
     }
 }
 

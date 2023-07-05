@@ -9,6 +9,10 @@ types = {
         skip_root_key = spriteTypes
         name_field = name # these are links that start with the GFX_ prefix in vanilla
         severity = warning
+		images = {
+			## primary
+			texture = textureFile # filepath
+		}
 	}
 }
 
@@ -16,14 +20,11 @@ types = {
 sprite = {
 	name = scalar
     ## file_extensions = { .dds .png .tga }
-    texturefile = filepath
+	textureFile = filepath
 	## cardinality = 0..1
 	noOfFrames = int
-
 	## cardinality = 0..1
 	loadType = scalar
-
 	## cardinality = 0..1
 	clickSound = <sound>
-
 }
