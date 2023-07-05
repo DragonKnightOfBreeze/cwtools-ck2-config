@@ -5,7 +5,7 @@ types = {
 
         localisation = {
             name = "$"
-            description = "desc_$"
+            desc = "desc_$"
         }
     }
 }

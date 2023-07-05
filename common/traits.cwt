@@ -53,8 +53,7 @@ types = {
             hidden = no
             localisation = {
                 name = "$"
-                description = "$_desc"
-
+                desc = "$_desc"
                 subtype[health_reducing] = {
                     death_reason = "$_death"
                 }

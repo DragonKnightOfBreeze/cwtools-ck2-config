@@ -19,7 +19,6 @@ types = {
         skip_root_key = { any monthly_currency_gain }
 
         localisation = {
-            ## required
             name = "$"
         }
     }
@@ -29,10 +28,8 @@ types = {
         skip_root_key = { any icon_triggers }
 
         localisation = {
-            ## required
             name = "$"
-            ## required
-            description = "$_desc"
+            desc = "$_desc"
         }
     }
     type[offmap_policy] = {
@@ -41,7 +38,7 @@ types = {
 
         localisation = {
             name = "$"
-            description = "$_desc"
+            desc = "$_desc"
             effect = "$_effect_desc"
         }
     }
@@ -51,7 +48,7 @@ types = {
 
         localisation = {
             name = "$"
-            description = "$_desc"
+            desc = "$_desc"
             effect = "$_effect_desc"
         }
     }

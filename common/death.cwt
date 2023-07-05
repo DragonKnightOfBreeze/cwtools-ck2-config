@@ -5,9 +5,9 @@ types = {
         path = "game/common/death"
 
         localisation = {
-            description = "$"
-            long_description = long_desc
-            death_date_description = death_date_desc
+            desc = "$"
+            long_desc = long_desc
+            death_date_desc = death_date_desc
         }
     }
 }

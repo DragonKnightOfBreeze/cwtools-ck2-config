@@ -4,7 +4,6 @@ types = {
         path = "game/common/succession_voting"
 
         localisation = {
-            ## required
             name = "$"
         }
     }
@@ -15,10 +14,8 @@ types = {
         skip_root_key = { any elector_stances }
 
         localisation = {
-            ## required
             name = "$"
-            ## required
-            description = "$_desc"
+            desc = "$_desc"
         }
     }
 }

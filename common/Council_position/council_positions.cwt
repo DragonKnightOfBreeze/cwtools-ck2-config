@@ -4,10 +4,8 @@ types = {
         path = "game/common/council_positions"
 
         localisation = {
-            ## required
             name = "$"
-            ## required
-            description = "$_desc"
+            desc = "$_desc"
         }
     }
 }

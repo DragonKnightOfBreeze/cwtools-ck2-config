@@ -12,9 +12,9 @@ types = {
 
         localisation = {
             name = "$"
-            description = "$_desc"
+            desc = "$_desc"
             ## optional
-            feature_description = "$_feature"
+            feature_desc = "$_feature"
             ## optional
             reformation_event_description = "string_reformed_$"
         }

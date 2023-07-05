@@ -11,7 +11,7 @@ types = {
 
         localisation = {
             name = "$"
-            description = "$_desc"
+            desc = "$_desc"
         }
     }
 
@@ -36,8 +36,7 @@ types = {
 
         localisation = {
             name = "$"
-            description = "$_desc"
-
+            desc = "$_desc"
             # Obligations use sprites
             subtype[!sprite] = {
                 button = "$_option"

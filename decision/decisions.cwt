@@ -8,8 +8,8 @@ types = {
 
         localisation = {
             name = "$"
-            description = "$_desc"
-            extra_description = "$_desc_extra"
+            desc = "$_desc"
+            extra_desc = "$_desc_extra"
         }
     }
 
@@ -19,7 +19,7 @@ types = {
 
         localisation = {
             name = "$"
-            description = "$_named"
+            desc = "$_named"
         }
     }
 
@@ -32,7 +32,7 @@ types = {
 
         localisation = {
             name = "$"
-            description = "$_desc"
+            desc = "$_desc"
         }
     }
 
@@ -42,7 +42,7 @@ types = {
 
         localisation = {
             name = "$"
-            description = "$_desc"
+            desc = "$_desc"
         }
     }
 
@@ -52,7 +52,7 @@ types = {
 
         localisation = {
             name = "$"
-            description = "$_desc"
+            desc = "$_desc"
         }
     }
 
@@ -64,7 +64,7 @@ types = {
 
         localisation = {
             name = "$"
-            description = "$_desc"
+            desc = "$_desc"
         }
     }
 
@@ -74,7 +74,7 @@ types = {
 
         localisation = {
             name = "$"
-            description = "$_desc"
+            desc = "$_desc"
         }
     }
 }

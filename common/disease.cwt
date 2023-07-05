@@ -5,7 +5,7 @@ types = {
 
         localisation = {
             name = "$"
-            description = tooltip
+            desc = tooltip
         }
     }
 }

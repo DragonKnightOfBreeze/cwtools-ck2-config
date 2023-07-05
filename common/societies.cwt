@@ -19,7 +19,7 @@ types = {
 
         localisation = {
             name = "$"
-            description = "$_desc"
+            desc = "$_desc"
             leader = "$_leader_desc"
             currency = "currency_name_$" # actually monthly_currency_gain>name; TODO: ask Dayshine if that's covered by his rules or at least could be
 

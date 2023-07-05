@@ -5,7 +5,7 @@ types = {
         path = "game/common/bloodlines"
         localisation = {
             name = "$"
-            description = "$_desc"
+            desc = "$_desc"
         }
     }
 }

@@ -33,7 +33,7 @@ types = {
 
         localisation = {
             name = "$"
-            description = "$_DESC"
+            desc = "$_DESC"
         }
     }
 
@@ -46,7 +46,7 @@ types = {
             ## optional
             name = "$"
             ## optional
-            description = "desc_$"
+            desc = "desc_$"
         }
     }
 }

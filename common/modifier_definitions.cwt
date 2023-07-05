@@ -5,8 +5,8 @@ types = {
 
         localisation = {
             name = "$"
-            ## optional
             ### Shows an explanation in places that sum up different modifiers
+            ## optional
             explanation = "$_EXPLANATION"
         }
     }

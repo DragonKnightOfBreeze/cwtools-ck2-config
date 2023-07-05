@@ -34,10 +34,8 @@ types = {
         }
 
         localisation = {
-            ## required
             name = "$"
-            # TODO: make a rule for using lower-level buildings' descs?
-            description = desc
+            desc = desc
         }
     }
 }

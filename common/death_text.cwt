@@ -4,7 +4,7 @@ types = {
         path = "game/common/death_text"
 
         localisation = {
-            description = "$"
+            desc = "$"
         }
     }
 }

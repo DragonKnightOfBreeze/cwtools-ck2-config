@@ -22,7 +22,7 @@ types = {
         localisation = {
             name = "$"
             ## optional
-            description = "$_desc"
+            desc = "$_desc"
             # Job titles can have optional names based on the character being male/female and the liege's religion/culture
             # Don't know if minor titles in general can as well
             # Optionals format: <name>[_female][_<religion>|_<religion_group>|_<culture>] (culture_group probably possible too)

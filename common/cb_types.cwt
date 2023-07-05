@@ -16,7 +16,7 @@ types = {
 
         localisation = {
             name = name
-            description = "$_desc"
+            desc = "$_desc"
             war_name = war_name
         }
     }

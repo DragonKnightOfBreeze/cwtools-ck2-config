@@ -48,19 +48,13 @@ types = {
         }
 
         localisation = {
-            ## required
             name = "$_title"
-
-            ## required
-            description = "$_desc"
-
+            desc = "$_desc"
             # TODO: figure out tooltip rules
             ## optional
             tooltip = "tooltip_$"
-
             ## optional
             success_tooltip = "tooltip_$_success"
-
             subtype[focus] = {
                 ## required
                 modifier = modifier_name

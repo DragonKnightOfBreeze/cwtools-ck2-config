@@ -6,7 +6,7 @@ types = {
         path_strict = yes
         localisation = {
             name = "$"
-            description = "$_desc"
+            desc = "$_desc"
         }
     }
 }
