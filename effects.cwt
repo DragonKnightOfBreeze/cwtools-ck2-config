@@ -124,7 +124,7 @@ alias[effect:trigger_switch] = {
     on_trigger = alias_keys_field[trigger]
     ### The RHS option.
     ## cardinality = ~1..inf
-    # for key of this property, config will be overridden by: icu.windea.pls.lang.config.impl.ParadoxSwitchOverriddenConfigProvider
+    # for key of this property, config will be overridden by: icu.windea.pls.lang.overridden.impl.ParadoxSwitchOverriddenConfigProvider
     scalar = { alias_name[effect] = alias_match_left[effect] }
     ### The option to pick if none of the previous options match.
     ## cardinality = ~1..1
