@@ -2,830 +2,830 @@ on_actions = {
 	### Fires on game load (game start and loading from saves) for ALL characters (not only the player). Note: not called for ruler designed characters. Also see on_chronicle_start.
 	## replace_scopes = { this = character root = character }
 	## event_type = character
-	on_startup = {}
+	on_startup
 
 	### Fires every year.
 	## replace_scopes = { this = character root = character }
 	## event_type = character
-	on_yearly_pulse = {}
+	on_yearly_pulse
 
 	### Fires every two years.
 	## replace_scopes = { this = character root = character }
 	## event_type = character
-	on_bi_yearly_pulse = {}
+	on_bi_yearly_pulse
 
 	### Fires every five years.
 	## replace_scopes = { this = character root = character }
 	## event_type = character
-	on_five_year_pulse = {}
+	on_five_year_pulse
 
 	### Fires every ten years.
 	## replace_scopes = { this = character root = character }
 	## event_type = character
-	on_decade_pulse = {}
+	on_decade_pulse
 
 	### Fires every year from 2 to 16 years old. Maybe based on defines?
 	## replace_scopes = { this = character root = character }
 	## event_type = character
-	on_yearly_childhood_pulse = {}
+	on_yearly_childhood_pulse
 
 	### Fires at ages 6.5, 8.5, and 10.5.
 	## replace_scopes = { this = character root = character }
 	## event_type = character
-	on_childhood_pulse = {}
+	on_childhood_pulse
 
 	### Fires at ages 12.5 and 14.5.
 	## replace_scopes = { this = character root = character }
 	## event_type = character
-	on_adolescence_pulse = {}
+	on_adolescence_pulse
 
 	### Fires every year for characters with a focus.
 	## replace_scopes = { this = character root = character }
 	## event_type = character
-	on_focus_pulse = {}
+	on_focus_pulse
 
 	### Fires when a province modifier with major = yes is removed.
 	## replace_scopes = { this = province root = province }
 	## event_type = province
-	on_province_major_modifier = {}
+	on_province_major_modifier
 
 	### Fires when a new outbreak starts. ROOT is the province, token_data is the disease name.
 	## replace_scopes = { this = province root = province }
 	## event_type = province
-	on_outbreak = {}
+	on_outbreak
 
 	### FROM is the opposing army's commander? FROMFROM is the opposing army's liege?
 	## replace_scopes = { this = character root = character from = character fromfrom = character }
 	## event_type = character
-	on_combat_pulse = {}
+	on_combat_pulse
 
 	### FROM is the character who is the commander of the opposing side, FROMFROM is the character who is the liege of the commander of the opposing side.
 	## replace_scopes = { this = character root = character from = character fromfrom = character }
 	## event_type = character
-	on_combat_starting = {}
+	on_combat_starting
 
 	### Fires for both the attacking and defending siege leaders roughly every 10 days, attacker first. ROOT is the appropriate siege leader.
 	## replace_scopes = { this = character root = character }
 	## event_type = character
-	on_siege_pulse = {}
+	on_siege_pulse
 
 	### ROOT is any commander except the leader on winning side, FROM is the opponent army leader.
 	## replace_scopes = { this = character root = character }
 	## event_type = character
-	on_battle_won = {}
+	on_battle_won
 
 	### ROOT is any commander except the leader on winning side, FROM is the opponent army leader.
 	## replace_scopes = { this = character root = character }
 	## event_type = character
-	on_major_battle_won = {}
+	on_major_battle_won
 
 	### ROOT is the leader on winning side, FROM is the opponent army leader.
 	## replace_scopes = { this = character root = character }
 	## event_type = character
-	on_battle_won_leader = {}
+	on_battle_won_leader
 
 	### ROOT is the leader on winning side, FROM is the opponent army leader.
 	## replace_scopes = { this = character root = character }
 	## event_type = character
-	on_major_battle_won_leader = {}
+	on_major_battle_won_leader
 
 	### ROOT is winning army owner, FROM is opponent army owner.
 	## replace_scopes = { this = character root = character }
 	## event_type = character
-	on_battle_won_owner = {}
+	on_battle_won_owner
 
 	### ROOT is any commander except the leader on losing side, FROM is the opponent army leader.
 	## replace_scopes = { this = character root = character }
 	## event_type = character
-	on_battle_lost = {}
+	on_battle_lost
 
 	### ROOT is any commander except the leader on losing side, FROM is the opponent army leader.
 	## replace_scopes = { this = character root = character }
 	## event_type = character
-	on_major_battle_lost = {}
+	on_major_battle_lost
 
 	### ROOT is the leader on losing side, FROM is the opponent army leader.
 	## replace_scopes = { this = character root = character }
 	## event_type = character
-	on_battle_lost_leader = {}
+	on_battle_lost_leader
 
 	### ROOT is the leader on losing side, FROM is the opponent army leader.
 	## replace_scopes = { this = character root = character }
 	## event_type = character
-	on_major_battle_lost_leader = {}
+	on_major_battle_lost_leader
 
 	### ROOT is losing army owner, FROM is opponent army owner.
 	## replace_scopes = { this = character root = character }
 	## event_type = character
-	on_battle_lost_owner = {}
+	on_battle_lost_owner
 
 	### ROOT is the siege attacker, FROM is the barony won.
 	## replace_scopes = { this = character root = character from = title }
 	## event_type = character
-	on_siege_won_leader = {}
+	on_siege_won_leader
 
 	### ROOT is the siege attacker, FROM is the province
 	## replace_scopes = { this = character root = character from = province }
 	## event_type = character
-	on_siege_won_leader_fort = {}
+	on_siege_won_leader_fort
 
 	### ROOT is the siege attacker, FROM is the province
 	## replace_scopes = { this = character root = character from = province }
 	## event_type = character
-	on_siege_won_leader_trade_post = {}
+	on_siege_won_leader_trade_post
 
 	### ROOT is the siege defender, FROM is the barony lost.
 	## replace_scopes = { this = character root = character from = title }
 	## event_type = character
-	on_siege_lost_leader = {}
+	on_siege_lost_leader
 
 	### ROOT is the siege defender, FROM is the province.
 	## replace_scopes = { this = character root = character from = province }
 	## event_type = character
-	on_siege_lost_leader_fort = {}
+	on_siege_lost_leader_fort
 
 	### ROOT is the siege defender, FROM is the province.
 	## replace_scopes = { this = character root = character from = province }
 	## event_type = character
-	on_siege_lost_leader_trade_post = {}
+	on_siege_lost_leader_trade_post
 
 	### ROOT is the owner of the winning unit, FROM is the barony won.
 	## replace_scopes = { this = character root = character from = title }
 	## event_type = character
-	on_siege_over_winner = {}
+	on_siege_over_winner
 
 	### ROOT is the owner of the winning unit, FROM is the province.
 	## replace_scopes = { this = character root = character from = province }
 	## event_type = character
-	on_siege_over_winner_fort = {}
+	on_siege_over_winner_fort
 
 	### ROOT is the owner of the winning unit, FROM is the province.
 	## replace_scopes = { this = character root = character from = province }
 	## event_type = character
-	on_siege_over_winner_trade_post = {}
+	on_siege_over_winner_trade_post
 
 	### Fires for all characters presumed to be in the settlement at the time. ROOT is the local character, FROM is the lost title, new_character is the siege winner unit owner.
 	## replace_scopes = { this = character root = character from = title }
 	## event_type = character
-	on_siege_over_loc_chars = {}
+	on_siege_over_loc_chars
 
 	### Fires for all characters presumed to be in the province at the time. ROOT is the local character, FROM is the province, new_character is the siege winner unit owner.
 	## replace_scopes = { this = character root = character from = province }
 	## event_type = character
-	on_siege_over_loc_chars_fort = {}
+	on_siege_over_loc_chars_fort
 
 	### Fires for all characters presumed to be in the province at the time. ROOT is the local character, FROM is the province, new_character is the siege winner unit owner.
 	## replace_scopes = { this = character root = character from = province }
 	## event_type = character
-	on_siege_over_loc_chars_trade_post = {}
+	on_siege_over_loc_chars_trade_post
 
 	### ROOT is the target, FROM is the plotter.
 	## replace_scopes = { this = character root = character from = character }
 	## event_type = character
-	on_failed_assassination = {}
+	on_failed_assassination
 
 	### ROOT is the target, FROM is the plotter.
 	## replace_scopes = { this = character root = character from = character }
 	## event_type = character
-	on_failed_assassination_disc = {}
+	on_failed_assassination_disc
 
 	### ROOT is the target, FROM is the plotter.
 	## replace_scopes = { this = character root = character from = character }
 	## event_type = character
-	on_assassination = {}
+	on_assassination
 
 	### ROOT is the target, FROM is the plotter.
 	## replace_scopes = { this = character root = character from = character }
 	## event_type = character
-	on_assassination_disc = {}
+	on_assassination_disc
 
 	### ROOT is the baby. Note that in case of twin this'll fire for both twins.
 	## replace_scopes = { this = character root = character }
 	## event_type = character
-	on_birth = {}
+	on_birth
 
 	### ROOT is the new adult.
 	## replace_scopes = { this = character root = character }
 	## event_type = character
-	on_adulthood = {}
+	on_adulthood
 
 	### ROOT is the baby. Note that in case of twin this'll fire only for the second twin.
 	## replace_scopes = { this = character root = character }
 	## event_type = character
-	on_post_birth = {}
+	on_post_birth
 
 	### Fires at 2 months of pregnancy. ROOT is the pregnant woman.
 	## replace_scopes = { this = character root = character }
 	## event_type = character
-	on_pregnancy = {}
+	on_pregnancy
 
 	### Fires for lieges of both spouses. ROOT is the liege, FROM is the spouse under ROOT, new_character is the other spouse.
 	## replace_scopes = { this = character root = character from = character }
 	## event_type = character
-	on_marriage = {}
+	on_marriage
 
 	### Fires for lieges of both betrothed. ROOT is the liege, FROM is the betrothed under ROOT, new_character is the other betrothed.
 	## replace_scopes = { this = character root = character from = character }
 	## event_type = character
-	on_betrothal = {}
+	on_betrothal
 
 	### Fires when someone gets imprisoned for any reason. ROOT is the prisoner, FROM is the imprisoner.
 	## replace_scopes = { this = character root = character from = character }
 	## event_type = character
-	on_become_imprisoned_any_reason = {}
+	on_become_imprisoned_any_reason
 
 	### Fires if someone tries to imprison a landed character and fails. ROOT is the rebelling character, FROM is the ruler who tried to imprison.
 	## replace_scopes = { this = character root = character from = character }
 	## event_type = character
-	on_avoided_imprison_started_war = {}
+	on_avoided_imprison_started_war
 
 	### Fires if someone becomes imprisoned by the diplomatic action. ROOT is the prisoner, FROM is the imprisoner.
 	## replace_scopes = { this = character root = character from = character }
 	## event_type = character
-	on_became_imprisoned = {}
+	on_became_imprisoned
 
 	### Fires if someone tries to imprison an unlanded character and fails. ROOT is the fleeing character, FROM is the ruler who tried to imprison.
 	## replace_scopes = { this = character root = character from = character }
 	## event_type = character
-	on_avoided_imprison_fled_country = {}
+	on_avoided_imprison_fled_country
 
 	### Fires if someone is released from prison. ROOT is the prisoner, FROM is the imprisoner.
 	## replace_scopes = { this = character root = character from = character }
 	## event_type = character
-	on_released_from_prison = {}
+	on_released_from_prison
 
 	### Fires if someone is executed. Might fire before on_death. ROOT is the executee, FROM is the executioner.
 	## replace_scopes = { this = character root = character from = character }
 	## event_type = character
-	on_executed = {}
+	on_executed
 
 	### Fires if someone is exiled. ROOT is the character exiled. FROM is undefined? Find that hard to believe.
 	## replace_scopes = { this = character root = character }
 	## event_type = character
-	on_exiled = {}
+	on_exiled
 
 	### Fires every month for characters who are preparing an invasion. ROOT is the invader, FROM is the target character.
 	## replace_scopes = { this = character root = character from = character }
 	## event_type = character
-	on_prepared_invasion_monthly = {}
+	on_prepared_invasion_monthly
 
 	### Fires if an invasion becomes invalid. ROOT is the invader, FROM is the target character.
 	## replace_scopes = { this = character root = character from = character }
 	## event_type = character
-	on_prepared_invasion_aborts = {}
+	on_prepared_invasion_aborts
 
 	### Fires if an invasion expires. ROOT is the invader, FROM is the target character.
 	## replace_scopes = { this = character root = character from = character }
 	## event_type = character
-	on_prepared_invasion_expires = {}
+	on_prepared_invasion_expires
 
 	### Fires for a dying character, before succession is dealt with (still has flags and titles). ROOT is the dead character.
 	## replace_scopes = { this = character root = character }
 	## event_type = character
-	on_death = {}
+	on_death
 
 	### ???
 	## replace_scopes = { this = character root = character }
 	## event_type = character
-	on_merc_rampage = {}
+	on_merc_rampage
 
 	### ???
 	## replace_scopes = { this = character root = character }
 	## event_type = character
-	on_merc_leave = {}
+	on_merc_leave
 
 	### ???
 	## replace_scopes = { this = character root = character }
 	## event_type = character
-	on_merc_turn_coat_from = {}
+	on_merc_turn_coat_from
 
 	### ???
 	## replace_scopes = { this = character root = character }
 	## event_type = character
-	on_merc_turn_coat_to = {}
+	on_merc_turn_coat_to
 
 	### ???
 	## replace_scopes = { this = character root = character }
 	## event_type = character
-	on_holy_order_leave = {}
+	on_holy_order_leave
 
 	### ROOT is the raider, FROM is the looted settlement (title or province?)
 	## replace_scopes = { this = character root = character from = title }
 	## event_type = character
-	on_loot_settlement = {}
+	on_loot_settlement
 
 	### Fires when someone is looting currently in a province. ROOT is the looter, FROM is the province.
 	## replace_scopes = { this = character root = character from = province }
 	## event_type = character
-	on_loot_province = {}
+	on_loot_province
 
 	### Never triggered, reserved for CB use.
 	## replace_scopes = { this = character root = character }
 	## event_type = character
-	on_warleader_death = {}
+	on_warleader_death
 
 	### Respond to a proposed change of de facto law. ROOT is a ruler in the realm of the title, FROM is the title.
 	## replace_scopes = { this = character root = character from = title }
 	## event_type = character
-	on_approve_law = {}
+	on_approve_law
 
 	### Respond to a proposed change of de jure law. ROOT is a ruler in the de jure realm of the title, FROM is the title.
 	## replace_scopes = { this = character root = character from = title }
 	## event_type = character
-	on_approve_de_jure_law = {}
+	on_approve_de_jure_law
 
 	### When rebels appear. ROOT is the province.
 	## replace_scopes = { this = province root = province }
 	## event_type = province
-	on_rebel_revolt = {}
+	on_rebel_revolt
 
 	### When province defects to rebels. ROOT is ???, FROM is the province.
 	## replace_scopes = { this = character root = character from = province }
 	## event_type = character
-	on_defect_to_rebels = {}
+	on_defect_to_rebels
 
 	### When rebels disperse. ROOT is ???, FROM is the province previously occupied by the rebels.
 	## replace_scopes = { this = character root = character from = province }
 	## event_type = character
-	on_defect_from_rebels = {}
+	on_defect_from_rebels
 
 	### ROOT is the religious head, FROM is the attacked kingdom title, new_character is the targeted enemy.
 	## replace_scopes = { this = character root = character from = title fromfrom = character }
 	## event_type = character
-	on_crusade_creation = {}
+	on_crusade_creation
 
 	### ROOT is the religious head, FROM is the attacked kingdom title, new_character is the targeted enemy.
 	## replace_scopes = { this = character root = character from = title fromfrom = character }
 	## event_type = character
-	on_crusade_invalid = {}
+	on_crusade_invalid
 
 	### When the crusade succeeds. ROOT is the target title, FROM is the taker, new_character is the enemy.
 	## replace_scopes = { this = title root = title from = character fromfrom = character }
 	## event_type = title
-	on_crusade_success = {}
+	on_crusade_success
 
 	### When the crusade fails. ROOT is the target title, FROM is the head of religion, new_character is the enemy.
 	## replace_scopes = { this = title root = title from = character fromfrom = character }
 	## event_type = title
-	on_crusade_failure = {}
+	on_crusade_failure
 
 	### When a pagan ruler forces a prisoner to be his consort. ROOT is the prisoner, FROM is the ruler.
 	## replace_scopes = { this = character root = character from = character }
 	## event_type = character
-	on_forced_consort = {}
+	on_forced_consort
 
 	### When a pagan religion is reformed and the old religion has become a heresy. ROOT is the character triggering the reformation
 	## replace_scopes = { this = character root = character }
 	## event_type = character
-	on_reform_religion = {}
+	on_reform_religion
 
 	### When the religion changes in a province. ROOT is the province.
 	## replace_scopes = { this = province root = province }
 	## event_type = province
-	on_county_religion_change = {}
+	on_county_religion_change
 
 	### When a character accepts religious conversion (the diplomatic action). Fires for the vassal and each of his courtiers and vassals. ROOT is the character, FROM is the vassal, FROMFROM is the demander.
 	## replace_scopes = { this = character root = character from = character fromfrom = character }
 	## event_type = character
-	on_vassal_accepts_religious_conversion = {}
+	on_vassal_accepts_religious_conversion
 
 	### A heresy has become the new norm, replacing the old orthodoxy. ROOT is the character, FROM is a temporary character with the heresy religion, FROMFROM is a temporary character with the old religion.
 	## replace_scopes = { this = character root = character from = character fromfrom = character }
 	## event_type = character
-	on_heresy_takeover = {}
+	on_heresy_takeover
 
 	### Fires for a newly elected doge. ROOT is the new doge, FROM is the previous doge.
 	## replace_scopes = { this = character root = character from = character }
 	## event_type = character
-	on_become_doge = {}
+	on_become_doge
 
 	### ROOT is the vassal, FROM is the new liege.
 	## replace_scopes = { this = character root = character }
 	## event_type = character
-	on_elective_gavelkind_succession = {}
+	on_elective_gavelkind_succession
 
 	### Fires when a navy moves into a port. ROOT is the unit scope, FROM is the owner.
 	## replace_scopes = { this = unit root = unit from = character }
 	## event_type = unit
-	on_entering_port = {}
+	on_entering_port
 
 	### Fires when a new cardinal is elected (SoA only). ROOT is the new cardinal, FROM is the religious head.
 	## replace_scopes = { this = character root = character from = character }
 	## event_type = character
-	on_rel_elector_chosen = {}
+	on_rel_elector_chosen
 
 	### Fires when a new Pope is elected (SoA only). ROOT is the new Pope, FROM is the previous Pope.
 	## replace_scopes = { this = character root = character from = character }
 	## event_type = character
-	on_rel_head_chosen = {}
+	on_rel_head_chosen
 
 	### ROOT is the looter, FROM is the settlement title.
 	## replace_scopes = { this = character root = character from = title }
 	## event_type = character
-	on_settlement_looted = {}
+	on_settlement_looted
 
 	### ROOT is the navy's owner, FROM is the province.
 	## replace_scopes = { this = character root = character from = province }
 	## event_type = character
-	on_navy_returns_with_loot = {}
+	on_navy_returns_with_loot
 
 	### ROOT is the creating character, FROM is the title.
 	## replace_scopes = { this = character root = character from = title }
 	## event_type = character
-	on_create_title = {}
+	on_create_title
 
 	### ROOT is the character, FROM is the title, FROMFROM is the old holder.
 	## replace_scopes = { this = character root = character from = title fromfrom = character }
 	## event_type = character
-	on_new_holder = {}
+	on_new_holder
 
 	### ROOT is the character, FROM is the title, FROMFROM is the old holder.
 	## replace_scopes = { this = character root = character from = title fromfrom = character }
 	## event_type = character
-	on_new_holder_inheritance = {}
+	on_new_holder_inheritance
 
 	### ROOT is the character, FROM is the title, FROMFROM is the old holder.
 	## replace_scopes = { this = character root = character from = title fromfrom = character }
 	## event_type = character
-	on_new_holder_usurpation = {}
+	on_new_holder_usurpation
 
 	### Fires at the end of each year if the chronicle is empty.
 	## replace_scopes = { this = character root = character }
 	## event_type = character
-	on_create_chronicle_if_empty = {}
+	on_create_chronicle_if_empty
 
 	### Fires when the player changes character to another of the same dynasty. FROM is the old character, ROOT is the new holder.
 	## replace_scopes = { this = character root = character from = character }
 	## event_type = character
-	on_chronicle_owner_change = {}
+	on_chronicle_owner_change
 
 	### Fires for the player character, when the game starts (but not when loading from saves). Also works when Charlemagne DLC is not active. Note: for ruler designed characters, fires twice (for the historical character and player ruler designed character).
 	## replace_scopes = { this = character root = character }
 	## event_type = character
-	on_chronicle_start = {}
+	on_chronicle_start
 
 	### Fires when character converts religion for whatever reason. ROOT is the character after conversion, FROM is the old religion.
 	## replace_scopes = { this = character root = character from = religion }
 	## event_type = character
-	on_character_convert_religion = {}
+	on_character_convert_religion
 
 	### Fires when character converts to their secret religion. ROOT is the character after conversion, FROM is the old religion.
 	## replace_scopes = { this = character root = character from = religion }
 	## event_type = character
-	on_character_convert_secret_religion = {}
+	on_character_convert_secret_religion
 
 	### Fires when character converts culture for whatever reason. ROOT is the character after conversion, FROM is the old culture.
 	## replace_scopes = { this = character root = character from = culture }
 	## event_type = character
-	on_character_convert_culture = {}
+	on_character_convert_culture
 
 	### ROOT is the character getting the nickname.
 	## replace_scopes = { this = character root = character }
 	## event_type = character
-	on_acquire_nickname = {}
+	on_acquire_nickname
 
 	### Fires for vassals that can become independent as a result of liege being over vassal limit.
 	## replace_scopes = { this = character root = character }
 	## event_type = character
-	on_over_vassal_limit_succession = {}
+	on_over_vassal_limit_succession
 
 	### ROOT is the defender, FROM is the attacker.
 	## replace_scopes = { this = character root = character from = character }
 	## event_type = character
-	on_war_started = {}
+	on_war_started
 
 	### Offensive war victory. ROOT is the defender, FROM is the attacker.
 	## replace_scopes = { this = character root = character from = character }
 	## event_type = character
-	on_war_ended_victory = {}
+	on_war_ended_victory
 
 	### ROOT is the defender, FROM is the attacker.
 	## replace_scopes = { this = character root = character from = character }
 	## event_type = character
-	on_war_ended_invalid = {}
+	on_war_ended_invalid
 
 	### Offensive war white peace. ROOT is the defender, FROM is the attacker.
 	## replace_scopes = { this = character root = character from = character }
 	## event_type = character
-	on_war_ended_whitepeace = {}
+	on_war_ended_whitepeace
 
 	### Offensive war defeat. ROOT is the defender, FROM is the attacker.
 	## replace_scopes = { this = character root = character from = character }
 	## event_type = character
-	on_war_ended_defeat = {}
+	on_war_ended_defeat
 
 	### Fries whenever a character gets divorced regardless of the reason. ROOT is the spouse, FROM is the divorcer, new_character is the religious head if applicable.
 	## replace_scopes = { this = character root = character from = character }
 	## event_type = character
-	on_divorce = {}
+	on_divorce
 
 	### Fires whenever a character builds something in a holding. ROOT is the builder, FROM is the holding title.
 	## replace_scopes = { this = character root = character from = title }
 	## event_type = character
-	on_holding_building_start = {}
+	on_holding_building_start
 
 	### Fires whenever the construction of a new settlement/holding starts. ROOT is the builder, FROM is the title.
 	## replace_scopes = { this = character root = character from = title }
 	## event_type = character
-	on_settlement_construction_start = {}
+	on_settlement_construction_start
 
 	### Fires whenever the construction of a new settlement/holding finishes. ROOT is the builder, FROM is the title.
 	## replace_scopes = { this = character root = character from = title }
 	## event_type = character
-	on_settlement_construction_completed = {}
+	on_settlement_construction_completed
 
 	### Fires whenever the construction of a new trade post starts. ROOT is the builder, FROM is probably the province.
 	## replace_scopes = { this = character root = character from = province }
 	## event_type = character
-	on_trade_post_construction_start = {}
+	on_trade_post_construction_start
 
 	### Fires whenever the construction of a new trade post finishes. ROOT is the builder, FROM is probably the province.
 	## replace_scopes = { this = character root = character from = province }
 	## event_type = character
-	on_trade_post_construction_completed = {}
+	on_trade_post_construction_completed
 
 	### Fires whenever the construction of a new fort starts. ROOT is the builder, FROM is probably the province.
 	## replace_scopes = { this = character root = character from = province }
 	## event_type = character
-	on_fort_construction_start = {}
+	on_fort_construction_start
 
 	### Fires whenever the construction of a new fort finishes. ROOT is the builder, FROM is probably the province.
 	## replace_scopes = { this = character root = character from = province }
 	## event_type = character
-	on_fort_construction_completed = {}
+	on_fort_construction_completed
 
 	### ROOT is the starter, FROM is the target.
 	## replace_scopes = { this = character root = character from = character }
 	## event_type = character
-	on_feud_started = {}
+	on_feud_started
 
 	### ROOT is the ender, FROM is the target.
 	## replace_scopes = { this = character root = character from = character }
 	## event_type = character
-	on_feud_ended = {}
+	on_feud_ended
 
 	### ???
 	## replace_scopes = { this = character root = character }
 	## event_type = character
-	on_blood_brother_death = {}
+	on_blood_brother_death
 
 	### ROOT is the AI character.
 	## replace_scopes = { this = character root = character }
 	## event_type = character
-	on_ai_end_raid = {}
+	on_ai_end_raid
 
 	### ROOT is the mercenary captain.
 	## replace_scopes = { this = character root = character }
 	## event_type = character
-	on_mercenary_hired = {}
+	on_mercenary_hired
 
 	### ROOT is the mercenary captain.
 	## replace_scopes = { this = character root = character }
 	## event_type = character
-	on_mercenary_dismissed = {}
+	on_mercenary_dismissed
 
 	### ROOT is the old captain, FROM is the instigator, FROMFROM is the proposed captain,
 	## replace_scopes = { this = character root = character from = character fromfrom = character }
 	## event_type = character
-	on_mercenary_captain_replacement = {}
+	on_mercenary_captain_replacement
 
 	### Conclave "enforce peace" mechanic. ???
 	## replace_scopes = { this = character root = character }
 	## event_type = character
-	on_enforce_peace = {}
+	on_enforce_peace
 
 	### Conclave "enforce peace" mechanic. ???
 	## replace_scopes = { this = character root = character }
 	## event_type = character
-	on_enforce_peace_start = {}
+	on_enforce_peace_start
 
 	### Conclave "enforce peace" mechanic. ???
 	## replace_scopes = { this = character root = character }
 	## event_type = character
-	on_enforce_peace_six_vassals = {}
+	on_enforce_peace_six_vassals
 
 	### ???
 	## replace_scopes = { this = character root = character }
 	## event_type = character
-	on_law_vote_passed = {}
+	on_law_vote_passed
 
 	### ???
 	## replace_scopes = { this = character root = character }
 	## event_type = character
-	on_law_vote_failed = {}
+	on_law_vote_failed
 
 	### ???
 	## replace_scopes = { this = character root = character }
 	## event_type = character
-	on_player_mercenary_income = {}
+	on_player_mercenary_income
 
 	### Fired whenever a character receives an artifact (one for each artifact). ROOT is the character, FROM is the artifact, FROMFROM is the old artifact holder.
 	## replace_scopes = { this = character root = character from = artifact fromfrom = character }
 	## event_type = character
-	on_artifact_inheritance = {}
+	on_artifact_inheritance
 
 	### Fires every two years for characters in a society.
 	## replace_scopes = { this = character root = character }
 	## event_type = character
-	on_society_bi_yearly_pulse = {}
+	on_society_bi_yearly_pulse
 
 	### Fires when someone joins a society with no members. ROOT is the character, FROM is the society.
 	## replace_scopes = { this = character root = character from = society }
 	## event_type = character
-	on_society_created = {}
+	on_society_created
 
 	### Fires when the last member of a society leaves the society and is not replaced. ROOT is the character, FROM is the society.
 	## replace_scopes = { this = character root = character from = society }
 	## event_type = character
-	on_society_destroyed = {}
+	on_society_destroyed
 
 	### Fires when a indestructible society fails to find a new leader from existing characters. ROOT is the society, FROM is the society's previous leader.
 	## replace_scopes = { this = society root = society from = character }
 	## event_type = society
-	on_society_failed_to_find_new_leader = {}
+	on_society_failed_to_find_new_leader
 
 	### Fires when a society's progress reaches 100. ROOT is the society's leader, FROM is the society.
 	## replace_scopes = { this = character root = character from = society }
 	## event_type = character
-	on_society_progress_full = {}
+	on_society_progress_full
 
 	### Fires when a society's progress reaches 0. ROOT is the society's leader, FROM is the society.
 	## replace_scopes = { this = character root = character from = society }
 	## event_type = character
-	on_society_progress_zero = {}
+	on_society_progress_zero
 
 	### Fires for an offmap power's governor when the power changes its policy. ROOT is the governor, FROM is the offmap.
 	## replace_scopes = { this = character root = character from = offmap }
 	## event_type = character
-	on_offmap_policy_changed = {}
+	on_offmap_policy_changed
 
 	### Fires for an offmap power's governor when the power changes its status. ROOT is the governor, FROM is the offmap.
 	## replace_scopes = { this = character root = character from = offmap }
 	## event_type = character
-	on_offmap_status_changed = {}
+	on_offmap_status_changed
 
 	### Fires for an offmap power's new governor when the power changes its governor. ROOT is the new guvnah, FROM is the old governor, FROMFROM is the offmap.
 	## replace_scopes = { this = character root = character from = character fromfrom = offmap }
 	## event_type = character
-	on_offmap_governor_changed = {}
+	on_offmap_governor_changed
 
 	### Fires for an offmap power's new ruler when the power changes its governor. ROOT is the new ruler, FROM is the old ruler, FROMFROM is the offmap.
 	## replace_scopes = { this = character root = character from = character fromfrom = offmap }
 	## event_type = character
-	on_offmap_ruler_changed = {}
+	on_offmap_ruler_changed
 
 	### Fires for an offmap power's governor once per month on a random day. ROOT is the governor, FROM is the offmap.
 	## replace_scopes = { this = character root = character from = offmap }
 	## event_type = character
-	on_offmap_monthly_pulse = {}
+	on_offmap_monthly_pulse
 
 	### Fires for an offmap power's governor once per year during a random monthly update. ROOT is the governor, FROM is the offmap.
 	## replace_scopes = { this = character root = character from = offmap }
 	## event_type = character
-	on_offmap_yearly_pulse = {}
+	on_offmap_yearly_pulse
 
 	### Fires for the player (or a random character if in observe mode) just prior to the EU4 converter converting the game. Can be used to prepare the gamestate for EU4 conversion, then restore the original state. ROOT is the character.
 	## replace_scopes = { this = character root = character }
 	## event_type = character
-	on_eu4_conversion_start = {}
+	on_eu4_conversion_start
 
 	### Fires for the player (or a random character if in observe mode) just after the EU4 converter is done converting the game. ROOT is the character.
 	## replace_scopes = { this = character root = character }
 	## event_type = character
-	on_eu4_conversion_done = {}
+	on_eu4_conversion_done
 
 	### Fires for every character that gets the tyrant opinion penalty towards the tyrant when tyranny is caused by the code rather than script. Won't fire if you use add_opinion_modifer to add tyrrany. ROOT is the upset character, FROM is the tyrant.
 	## replace_scopes = { this = character root = character from = character }
 	## event_type = character
-	on_tyranny_gained = {}
+	on_tyranny_gained
 
 	### Fires once for the tyrant when tyranny is caused by the code rather than script. Won't fire if you use add_opinion_modifer to add tyrrany. ROOT is the tyrant.
 	## replace_scopes = { this = character root = character }
 	## event_type = character
-	on_tyranny_gained_tyrant_only = {}
+	on_tyranny_gained_tyrant_only
 
 	### Fires for the character refusing a revoke title attempt and declaring war over it. ROOT is the character declaring a war, FROM is the revoker, FROMFROM is the title being revoked.
 	## replace_scopes = { this = character root = character from = character fromfrom = title }
 	## event_type = character
-	on_revoke_attempted_started_war = {}
+	on_revoke_attempted_started_war
 
 	### Fires for the character refusing a retract vassalage attempt and declaring war over it. ROOT is the character declaring a war, FROM is the revoker, FROMFROM is the vassal title being retracted.
 	## replace_scopes = { this = character root = character from = character fromfrom = title }
 	## event_type = character
-	on_retract_vassal_attempted_started_war = {}
+	on_retract_vassal_attempted_started_war
 
 	### Fires for the character refusing an absorb clan attempt and declaring war over it. ROOT is the character declaring the war, FROM is the absorber.
 	## replace_scopes = { this = character root = character from = character }
 	## event_type = character
-	on_absorb_clan_attempted_started_war = {}
+	on_absorb_clan_attempted_started_war
 
 	### Fires for the character refusing a split clan attempt and declaring war over it. ROOT is the character declaring the war, FROM is the splitter.
 	## replace_scopes = { this = character root = character from = character }
 	## event_type = character
-	on_split_clan_attempted_started_war = {}
+	on_split_clan_attempted_started_war
 
 	### Fires for all characters in a unit (leading a flank or subunit) when it enters a province. ROOT is the character
 	## replace_scopes = { this = character root = character }
 	## event_type = character
-	on_unit_entering_province = {}
+	on_unit_entering_province
 
 	### Fires for a character when they are put in command of a flank. ROOT is the character.
 	## replace_scopes = { this = character root = character }
 	## event_type = character
-	on_command_unit = {}
+	on_command_unit
 
 	### Fires for a character when they are put in command of a subunit. ROOT is the character.
 	## replace_scopes = { this = character root = character }
 	## event_type = character
-	on_command_subunit = {}
+	on_command_subunit
 
 	### Fires for the very first character generated in a Random/Shattered World at the end of game setup (just before the Welcome screen is shown). ROOT is the very first character created.
 	## replace_scopes = { this = character root = character }
 	## event_type = character
-	on_alternate_start = {}
+	on_alternate_start
 
 	### Fires when a Crusade begins preparation. Fires for all Crusades/Jihads/GHWs regardless if they have a preparation phase - use uses_new_crusade = yes trigger to limit effects. ROOT is the religious head.
 	## replace_scopes = { this = character root = character }
 	## event_type = character
-	on_crusade_preparation_starts = {}
+	on_crusade_preparation_starts
 
 	### Fires when a Crusade ends preparation. ROOT is the religious head.
 	## replace_scopes = { this = character root = character }
 	## event_type = character
-	on_crusade_prepartion_ends = {}
+	on_crusade_prepartion_ends
 
 	### Fires when a Crusade is canceled. ROOT is the religious head.
 	## replace_scopes = { this = character root = character }
 	## event_type = character
-	on_crusade_canceled = {}
+	on_crusade_canceled
 
 	### Fires once a month while a Crusade is preparing or active. ROOT is the religious head.
 	## replace_scopes = { this = character root = character }
 	## event_type = character
-	on_crusade_monthly = {}
+	on_crusade_monthly
 
 	### Fires when the target of a Crusade chages (either through script or invalidation, or the target's heir inheriting). Happens immediately after the crusade_target_char and crusade_target_title scopes are updated). ROOT is the religious head, FROM is the previous target character, FROMFROM is the previous target title, FROMFROMFROM is the character who made the change if via diplomatic action, otherwise undefined.
 	## replace_scopes = { this = character root = character from = character fromfrom = title fromfromfrom = character }
 	## event_type = character
-	on_crusade_target_changes = {}
+	on_crusade_target_changes
 
 	### Fires when a character pledges their participation, even if the war has started. Does not fire when the character is auto-pledged due to joining the war. ROOT is the character.
 	## replace_scopes = { this = character root = character }
 	## event_type = character
-	on_pledge_crusade_participation = {}
+	on_pledge_crusade_participation
 
 	### Fires when a character pledges their defense of the crusade target, even if the war has started. Does not fire when the character is auto-pledged due to joining the war. ROOT is the character.
 	## replace_scopes = { this = character root = character }
 	## event_type = character
-	on_pledge_crusade_defense = {}
+	on_pledge_crusade_defense
 
 	### Fires when a character unpledges their participation, including the automatic unpledging on death and conversion. ROOT is the character.
 	## replace_scopes = { this = character root = character }
 	## event_type = character
-	on_unpledge_crusade_participation = {}
+	on_unpledge_crusade_participation
 
 	### Fires when a character unpledges their defense, including the automatic unpledging on death and conversion. ROOT is the character.
 	## replace_scopes = { this = character root = character }
 	## event_type = character
-	on_unpledge_crusade_defense = {}
+	on_unpledge_crusade_defense
 
 	### Fires when someone is excommunicated via the hardcoded diplomatic interaction. ROOT is the excommunicated character, FROM is the asker, FROMFROM is the religious head.
 	## replace_scopes = { this = character root = character from = character fromfrom = character }
 	## event_type = character
-	on_excommunicate_interaction = {}
+	on_excommunicate_interaction
 
 	### Fires when a player renames a character. This includes the "newborn" event. ROOT is the renamed character.
 	## replace_scopes = { this = character root = character }
 	## event_type = character
-	on_character_renamed = {}
+	on_character_renamed
 
 	### Fires when a player renames a title. This includes renaming via the title screen. ROOT is the renamed title.
 	## replace_scopes = { this = title root = title }
 	## event_type = title
-	on_title_renamed = {}
+	on_title_renamed
 
 	### Fires when a player renames a province. This includes renaming via the province view. ROOT is the renamed province.
 	## replace_scopes = { this = province root = province }
 	## event_type = province
-	on_province_renamed = {}
+	on_province_renamed
 
 	### Fires when a player renames an artifact. ROOT is the renamed artifact.
 	## replace_scopes = { this = artifact root = artifact }
 	## event_type = artifact
-	on_artifact_renamed = {}
+	on_artifact_renamed
 
 	### Fires when a player renames an bloodline. ROOT is the renamed bloodline.
 	## replace_scopes = { this = bloodline root = bloodline }
 	## event_type = bloodline
-	on_bloodline_renamed = {}
+	on_bloodline_renamed
 
 	### Fires when a change of employer has been detected. ROOT is the character that got a new employer, FROM is the previous employer (undefined if newly created), FROMFROM is the new employer.
 	## replace_scopes = { this = character root = character from = character fromfrom = character }
 	## event_type = character
-	on_employer_change = {}
+	on_employer_change
 
 	### Fires when a change of host has been detected. ROOT is the character that got a new host, FROM is the previous host (undefined if newly created), FROMFROM is the new host.
 	## replace_scopes = { this = character root = character from = character fromfrom = character }
 	## event_type = character
-	on_host_change = {}
+	on_host_change
 }
