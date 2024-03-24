@@ -46,7 +46,9 @@ alias[effect:else_if] = {
 }
 
 ## scope = any
-alias[effect:else] = single_alias_right[effect_clause]
+alias[effect:else] = {
+    alias_name[effect] = alias_match_left[effect]
+}
 
 # Absolute reference scopes
 
