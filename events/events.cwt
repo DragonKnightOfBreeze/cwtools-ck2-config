@@ -4,14 +4,14 @@ types = {
         file_extension = .txt
         name_field = id
 
-        subtype[hidden] = {
-            hide_window = yes
-        }
         subtype[triggered] = {
             is_triggered_only = yes
         }
         subtype[mean_time_to_happen] = {
             mean_time_to_happen = {}
+        }
+        subtype[hidden] = {
+            hide_window = yes
         }
 
         ## group = event_type
