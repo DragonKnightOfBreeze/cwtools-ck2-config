@@ -1,7 +1,7 @@
 types = {
     type[event] = {
         path = "game/events"
-        file_extension = .txt
+        path_extension = .txt
         name_field = id
 
         ## group = event_attribute
